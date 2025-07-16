@@ -1,0 +1,28 @@
+name: ✨ Feature Request
+description: Đề xuất tính năng hoặc cải tiến mới
+title: "[Feature]: "
+labels: [enhancement]
+assignees: []
+
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Mô tả yêu cầu
+      description: Mô tả mục tiêu và ngữ cảnh sử dụng
+      placeholder: "Người dùng muốn xem báo cáo doanh thu theo ngày..."
+
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Lý do / giá trị mang lại
+      placeholder: "Giúp sale nắm nhanh hiệu suất làm việc hàng ngày"
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Điều kiện hoàn thành (Acceptance Criteria)
+      placeholder: |
+        - Hiển thị biểu đồ đường
+        - Có filter theo ngày
+        - Dữ liệu realtime

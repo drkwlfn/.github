@@ -1,0 +1,46 @@
+name: 🐞 Bug Report
+description: Báo cáo lỗi hoặc hành vi không đúng
+title: "[Bug]: "
+labels: [bug, needs-triage]
+assignees: []
+
+body:
+  - type: textarea
+    id: describe
+    attributes:
+      label: Mô tả lỗi
+      description: Hãy mô tả rõ ràng điều gì đang xảy ra sai.
+      placeholder: "Khi tôi nhấn nút Lưu, không có gì xảy ra..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Các bước để tái hiện lỗi
+      description: Nêu chi tiết các bước để gặp lỗi
+      placeholder: |
+        1. Mở trang X
+        2. Nhấn nút Y
+        3. Quan sát hành vi sai
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Kết quả mong đợi
+      placeholder: "Nút Lưu phải hiển thị thông báo 'Đã lưu thành công'"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Mức độ nghiêm trọng
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+      default: 1
